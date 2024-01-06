@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <GenStepDef>
+        <defName>Garethp_MoreQuests_DonationCollector</defName>
+        <linkWithSite>Garethp_MoreQuests_DonationCollector</linkWithSite>
+        <genStep Class="MoreQuests.DonationsWelcome.GenStep_DonationCollector">
+            <count>1</count>
+            <nearMapCenter>true</nearMapCenter>
+        </genStep>
+    </GenStepDef>
+</Defs>
