@@ -32,15 +32,20 @@ public class PilgrimageDataStore : RimWorld.QuestGen.QuestNode
             yield return ThingDefOf.Beer;
         }
     }
-    
+
+    private static List<string> AlwaysAllowed = new()
+    {
+        ThingDefOf.Silver.defName, ThingDefOf.Gold.defName
+    };
+
     protected override void RunInt()
-    { 
+    {
         if (!ModLister.CheckIdeology("Worshipped terminal"))
             return;
 
         var quest = QuestGen.quest;
         var slate = QuestGen.slate;
-        
+
         slate.Set("requestedThingCount", 0);
         slate.Set("requestedThingLabel", "");
         
@@ -208,18 +213,20 @@ public class PilgrimageDataStore : RimWorld.QuestGen.QuestNode
         IEnumerable<ThingDef> allowedThings)
     {
         return allowedThings.Select(thingDef =>
-        {
-            var requestedCount =
-                ThingUtility.RoundedResourceStackCount(Mathf.Max(1,
-                    Mathf.RoundToInt(value / thingDef.BaseMarketValue)));
-            
-            if (!thingDef.PlayerAcquirable || !PlayerItemAccessibilityUtility.Accessible(thingDef, requestedCount, map))
             {
-                requestedCount = 0;
-            }
+                var requestedCount =
+                    ThingUtility.RoundedResourceStackCount(Mathf.Max(1,
+                        Mathf.RoundToInt(value / thingDef.BaseMarketValue)));
 
-            return new Pair<ThingDef, int>(thingDef, requestedCount);
-        })
+                if (!AlwaysAllowed.Contains(thingDef.defName) && (!thingDef.PlayerAcquirable ||
+                                                                  !PlayerItemAccessibilityUtility.Accessible(thingDef,
+                                                                      requestedCount, map)))
+                {
+                    requestedCount = 0;
+                }
+
+                return new Pair<ThingDef, int>(thingDef, requestedCount);
+            })
             .Where(itemPair => itemPair.Second > 0)
             .RandomElement();
     }
