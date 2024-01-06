@@ -33,10 +33,7 @@ public class PilgrimageDataStore : RimWorld.QuestGen.QuestNode
         }
     }
 
-    private static List<string> AlwaysAllowed = new()
-    {
-        ThingDefOf.Silver.defName, ThingDefOf.Gold.defName
-    };
+    private static List<string> AlwaysAllowed = new() { "Silver", "Gold" };
 
     protected override void RunInt()
     {
