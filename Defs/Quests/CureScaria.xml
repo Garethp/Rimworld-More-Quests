@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>Garethp_MoreQuests_CureScaria</defName>
+    <rootSelectionWeight>0</rootSelectionWeight>
+    <defaultChallengeRating>1</defaultChallengeRating>
+    <isRootSpecial>true</isRootSpecial>
+    <epicParent>RelicHunt</epicParent>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->[constAdj] Cure</li>
+        <li>questName->A [constAdj] Cure</li>
+        <li>questName->The [constAdj] Cure</li>
+        <li>constAdj(p=20)->[AdjectiveLarge]</li>
+        <li>constAdj->terrible</li>
+        <li>constAdj->great</li>
+        <li>constAdj->grand</li>
+        <li>constAdj->dangerous</li>
+        <li>constAdj->monumental</li>
+        <li>constAdj->foreboding</li>
+        <li>constAdj->frightening</li>
+        <li>constAdj->dreadful</li>
+        <li>constAdj->fearful</li>
+        <li>constAdj->harrowing</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->Cure pls</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    
+    <root Class="MoreQuests.QuestNode.CureScaria" />
+
+  </QuestScriptDef>
+
+</Defs>
