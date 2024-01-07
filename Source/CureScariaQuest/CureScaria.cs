@@ -48,6 +48,7 @@ public class CureScaria : RimWorld.QuestGen.QuestNode
 
         var pawnKilledSignal = QuestGenUtility.HardcodedSignalWithQuestID("infectedPawn.Killed");
         var scariaCuredSignal = QuestGenUtility.HardcodedSignalWithQuestID("infectedPawn.ScariaCured");
+        var pawnLeftMapSignal = QuestGenUtility.HardcodedSignalWithQuestID("infectedPawn.LeftMap");
         
         var relic = slate.Get<Precept_Relic>("relic");
         quest.RewardChoice().choices.Add(new QuestPart_Choice.Choice
@@ -64,6 +65,10 @@ public class CureScaria : RimWorld.QuestGen.QuestNode
         
         quest.SignalPassActivable(
             () => quest.End(QuestEndOutcome.Fail, inSignal: pawnKilledSignal, sendStandardLetter: true)
+        );
+        
+        quest.SignalPassActivable(
+            () => quest.End(QuestEndOutcome.Fail, inSignal: pawnLeftMapSignal, sendStandardLetter: true)
         );
 
         quest.SignalPassActivable(() =>
