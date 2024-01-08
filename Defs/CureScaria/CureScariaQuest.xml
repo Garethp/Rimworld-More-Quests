@@ -2,7 +2,7 @@
 <Defs>
 
   <QuestScriptDef>
-    <defName>Garethp_MoreQuests_CureScaria</defName>
+    <defName>Garethp_MoreRelicQuests_CureScaria</defName>
     <rootSelectionWeight>0</rootSelectionWeight>
     <defaultChallengeRating>1</defaultChallengeRating>
     <isRootSpecial>true</isRootSpecial>
@@ -32,7 +32,7 @@
       </rulesStrings>
     </questDescriptionRules>
     
-    <root Class="MoreQuests.CureScariaQuest.CureScaria" />
+    <root Class="MoreRelicQuests.CureScariaQuest.CureScaria" />
 
   </QuestScriptDef>
 

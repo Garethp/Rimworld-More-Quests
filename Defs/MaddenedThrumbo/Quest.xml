@@ -3,7 +3,7 @@
 <Defs>
 
     <QuestScriptDef>
-        <defName>Garethp_MoreQuests_MaddenedThrumbos</defName>
+        <defName>Garethp_MoreRelicQuests_MaddenedThrumbos</defName>
         <rootSelectionWeight>0</rootSelectionWeight>
         <defaultChallengeRating>1</defaultChallengeRating>
         <isRootSpecial>true</isRootSpecial>
@@ -34,7 +34,7 @@
             </rulesStrings>
         </questDescriptionRules>
 
-        <root Class="MoreQuests.MaddenedThrumbos.MaddenedThrumboQuest" />
+        <root Class="MoreRelicQuests.MaddenedThrumbos.MaddenedThrumboQuest" />
     </QuestScriptDef>
 
 </Defs>

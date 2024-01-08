@@ -4,7 +4,7 @@
         <xpath>Defs/HediffDef[defName="Scaria"]/comps</xpath>
         <value>
             <li>
-                <compClass>MoreQuests.CureScariaQuest.ScariaCuredSignalComp</compClass>
+                <compClass>MoreRelicQuests.CureScariaQuest.ScariaCuredSignalComp</compClass>
             </li>
         </value>
     </Operation>

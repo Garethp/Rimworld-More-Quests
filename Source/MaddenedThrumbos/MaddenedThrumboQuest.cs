@@ -7,7 +7,7 @@ using UnityEngine;
 using Verse;
 using Random = System.Random;
 
-namespace MoreQuests.MaddenedThrumbos;
+namespace MoreRelicQuests.MaddenedThrumbos;
 
 public class MaddenedThrumboQuest : RimWorld.QuestGen.QuestNode
 {

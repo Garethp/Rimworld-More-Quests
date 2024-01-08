@@ -2,7 +2,7 @@
 using RimWorld.BaseGen;
 using Verse;
 
-namespace MoreQuests.DonationsWelcome;
+namespace MoreRelicQuests.DonationsWelcome;
 
 public class GenStep_DonationCollector: GenStep_Scatterer
 {

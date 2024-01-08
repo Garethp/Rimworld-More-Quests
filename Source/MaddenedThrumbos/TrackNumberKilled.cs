@@ -3,7 +3,7 @@ using RimWorld;
 using RimWorld.Planet;
 using Verse;
 
-namespace MoreQuests.MaddenedThrumbos;
+namespace MoreRelicQuests.MaddenedThrumbos;
 
 public class TrackNumberKilled(Faction factionToTrack, string mapGeneratedSignal) : QuestPart
 {

@@ -1,17 +1,17 @@
 ﻿<Defs>
     <SitePartDef ParentName="Outpost">
-        <defName>Garethp_MoreQuests_MaddenedThrumbos</defName>
+        <defName>Garethp_MoreRelicQuests_MaddenedThrumbos</defName>
         <label>threatened village</label>
         <description>A village under threat by some Maddened Thrumbos.</description>
         <expandingIconTexture>World/WorldObjects/Expanding/Sites/WorshipfulVillage</expandingIconTexture>
         <tags Inherit="False">
-            <li>Garethp_MoreQuests_MaddenedThrumbos</li>
+            <li>Garethp_MoreRelicQuests_MaddenedThrumbos</li>
         </tags>
     </SitePartDef>
 
     <GenStepDef>
-        <defName>Garethp_MoreQuests_MaddenedThrumbos</defName>
-        <linkWithSite>Garethp_MoreQuests_MaddenedThrumbos</linkWithSite>
+        <defName>Garethp_MoreRelicQuests_MaddenedThrumbos</defName>
+        <linkWithSite>Garethp_MoreRelicQuests_MaddenedThrumbos</linkWithSite>
         <order>450</order>
         <genStep Class="GenStep_Outpost">
             <size>24</size>

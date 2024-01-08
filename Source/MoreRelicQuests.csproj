@@ -2,12 +2,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <RootNamespace>MoreQuests</RootNamespace>
+        <RootNamespace>MoreRelicQuests</RootNamespace>
         <TargetFramework>net472</TargetFramework>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
         <LangVersion>latest</LangVersion>
-        <PackageId>MoreQuests</PackageId>
+        <PackageId>MoreRelicQuests</PackageId>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

@@ -10,7 +10,7 @@ using UnityEngine;
 using Verse;
 using Random = System.Random;
 
-namespace MoreQuests.QuestNode;
+namespace MoreRelicQuests.QuestNode;
 
 public class PilgrimageDataStore : RimWorld.QuestGen.QuestNode
 {

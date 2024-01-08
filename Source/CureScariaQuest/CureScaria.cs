@@ -3,7 +3,7 @@ using RimWorld;
 using RimWorld.QuestGen;
 using Verse;
 
-namespace MoreQuests.CureScariaQuest;
+namespace MoreRelicQuests.CureScariaQuest;
 
 public class CureScaria : RimWorld.QuestGen.QuestNode
 {

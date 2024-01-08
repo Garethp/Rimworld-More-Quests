@@ -1,7 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace MoreQuests.CureScariaQuest;
+namespace MoreRelicQuests.CureScariaQuest;
 
 public class ScariaCuredSignalComp: HediffComp
 {
