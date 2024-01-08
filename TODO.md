@@ -6,7 +6,7 @@
  - [ ] Hunt a pack of maddened thrumbos threatening a village
  - [ ] Become allies with another Faction on the planet
  - [ ] Perform a good religious ceremony with some of their villagers in attendance
- - [ ] Capture and cure someone with Scaria
+ - [x] Capture and cure someone with Scaria
 
 ## More complicated ideas:
  - [ ] Actually build a big building
