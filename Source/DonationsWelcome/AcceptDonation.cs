@@ -5,7 +5,7 @@ using RimWorld.QuestGen;
 using Verse;
 using Verse.Grammar;
 
-namespace MoreRelicQuests.PartWorkers;
+namespace MoreRelicQuests.DonationsWelcome;
 
 public class AcceptDonation: SitePartWorker
 {

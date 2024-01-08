@@ -6,7 +6,7 @@
         <arrivedLetter>You may stay here for {TIMER} as long as you do not violate their rules.</arrivedLetter>
         <approachOrderString>Investigate {0}</approachOrderString>
         <disallowsAutomaticDetectionTimerStart>true</disallowsAutomaticDetectionTimerStart>
-        <workerClass>MoreRelicQuests.PartWorkers.AcceptDonation</workerClass>
+        <workerClass>MoreRelicQuests.DonationsWelcome.AcceptDonation</workerClass>
         <expandingIconTexture>World/WorldObjects/Expanding/Sites/WorshipfulVillage</expandingIconTexture>
         <tags Inherit="False">
             <li>WorshippedTerminal</li>

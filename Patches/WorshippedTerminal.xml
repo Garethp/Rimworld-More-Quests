@@ -3,7 +3,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/QuestScriptDef[defName="Hack_WorshippedTerminal"]/root</xpath>
         <value>
-            <root Class="MoreRelicQuests.QuestNode.PilgrimageDataStore" />
+            <root Class="MoreRelicQuests.DonationsWelcome.PilgrimageDataStore" />
         </value>
     </Operation>
 
