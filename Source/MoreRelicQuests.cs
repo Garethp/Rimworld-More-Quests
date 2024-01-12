@@ -1,14 +1,11 @@
-using RimWorld; 
-using RimWorld.QuestGen;
 using Verse;
 
-namespace MoreQuests;
+namespace MoreRelicQuests;
 
 public class MoreRelicQuests : Mod
 {
     public MoreRelicQuests(ModContentPack content) : base(content)
     {
     }
-    
     
 }

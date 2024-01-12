@@ -76,7 +76,7 @@ public class MaddenedThrumboQuest : RimWorld.QuestGen.QuestNode
         var site = QuestGen_Sites.GenerateSite(
             new List<SitePartDefWithParams>
             {
-                new(DefDatabase<SitePartDef>.GetNamed("Garethp_MoreQuests_MaddenedThrumbos"), OutpostParameters),
+                new(DefDatabase<SitePartDef>.GetNamed("Garethp_MoreRelicQuests_MaddenedThrumbos"), OutpostParameters),
                 new(DefDatabase<SitePartDef>.GetNamed("Manhunters"), ThumboParameters)
             },
             tile,

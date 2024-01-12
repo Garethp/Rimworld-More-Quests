@@ -96,7 +96,7 @@ public class PilgrimageDataStore : RimWorld.QuestGen.QuestNode
             new List<SitePartDefWithParams>
             {
                 new(SitePartDefOf.WorshippedTerminal, parms2),
-                new(DefDatabase<SitePartDef>.GetNamed("Garethp_MoreQuests_DonationCollector"), new SitePartParams())
+                new(DefDatabase<SitePartDef>.GetNamed("Garethp_MoreRelicQuests_DonationCollector"), new SitePartParams())
             },
             tile,
             tribalFaction
