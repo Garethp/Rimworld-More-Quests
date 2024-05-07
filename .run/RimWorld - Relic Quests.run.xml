@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RimWorld - Relic Quests" type="RimworldRunConfiguration" factoryName="RimworldRunConfiguration">
+    <option name="commandLineOptions" value="" />
+    <option name="modListPath" value="$PROJECT_DIR$/Modlist.xml" />
+    <option name="saveFilePath" value="$PROJECT_DIR$/Quickstart - Relics.rws" />
+    <option name="scriptName" value="D:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64.exe" />
+    <method v="2" />
+  </configuration>
+</component>
