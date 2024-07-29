@@ -43,6 +43,7 @@ public class MaddenedThrumboQuest : RimWorld.QuestGen.QuestNode
         tribalFaction.temporary = true;
         tribalFaction.factionHostileOnHarmByPlayer = Find.Storyteller.difficulty.allowViolentQuests;
         tribalFaction.neverFlee = true;
+        tribalFaction.factionHostileOnHarmByPlayer = false;
         Find.FactionManager.Add(tribalFaction);
         quest.ReserveFaction(tribalFaction);
 
@@ -82,7 +83,7 @@ public class MaddenedThrumboQuest : RimWorld.QuestGen.QuestNode
             tile,
             tribalFaction
         );
-
+        
         site.doorsAlwaysOpenForPlayerPawns = true;
         slate.Set("site", site);
         quest.SpawnWorldObject(site);
@@ -107,6 +108,7 @@ public class MaddenedThrumboQuest : RimWorld.QuestGen.QuestNode
         quest.AddPart(questTimer);
         quest.AddPart(new QuestPart_Delay());
         quest.AddPart(new TrackNumberKilled(tribalFaction, mapGeneratedSignal));
+        quest.AddPart(new JobComplete(tribalFaction, thrumbosDefeated));
         
         quest.SetFactionHidden(tribalFaction);
 
